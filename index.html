@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>chatPsych.org</title>
+  <link rel="stylesheet" href="static/CSS/style.css">
+  <script src="static/js/script.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>chatPsych.org</h1>
+  <nav>
+    <ul>
+      <li><a href="#about" class="nav-button" data-target="about">About</a></li>
+      <li><a href="#overview" class="nav-button" data-target="overview">Overview</a></li>
+      <li><a href="#playground" class="nav-button" data-target="playground">Playground</a></li>
+      <li><a href="#downloads" class="nav-button" data-target="downloads">Downloads</a></li>
+      <li><a href="#versions" class="nav-button" data-target="versions">Versions/Adaptions</a></li>
+      <li><a href="#developers" class="nav-button" data-target="developers">Developers</a></li>
+      <li><a href="#blog" class="nav-button" data-target="blog">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>chatPsych is a Python based, open-source interface for real-world human–AI research. It leverages widespread AI models and aims to improve data collection, experimental manipulations, and novel insights into AI–human interactions. <br><br>This tool will be introduced in a 2025 behavioural methods research paper:<br> <strong>“chatPsych: An Artificial Intelligence Interface for Experimental Human-AI Interaction.”</strong></p>
+    <p>Developed by Oliver C. Lack at the Australian Institute for Machine Learning and the School of Psychology, University of Adelaide, chatPsych integrates a large selection of AI models through APIs into a GUI interface for online and local experimentation. It affords researchers an open-source and accessible method for experimental designs that use prompt engineering, model hyperparameters, multi-modalities interfaces, model comparison, and content moderation.</p>
+    <br>
+    <div class="img-container">
+      <img class="img" src="static/img/Login.png" alt="Login Screen">
+      <img class="img" src="static/img/Chat.png" alt="Chat Screen">
+    </div>
+    <p><br>chatPsych is intended for experimental research. It collects a plethora of interaction data especially relevant to various human-AI interaction research. It may be easily scaled and customised for prospective behavioural research projects. <br><br>This interface aims to make interaction with real-world AI systems more accessible. Integration with Qualtrics, Prolific, MTurk or other platforms for online sampling is easy.<br><br> The incorporation of such systems into generalisable experiments is imperative for human-AI research!
+    <p>
+      <br><strong>For usage, questions or collaborations, please cite and contact:</strong> <br><br>
+      Oliver Lack <br>
+      oliver.lack@adelaide.edu.au | oliver@oliverlack.com <br>
+      <a href="https://www.oliverlack.com" target="_blank">oliverlack.com</a>
+      <br>
+      <a href="https://researchers.adelaide.edu.au/profile/oliver.lack" target="_blank">Researcher Profile </a>
+  </p>
+  </section>
+
+  <!-- Overview Section -->
+  <section id="overview" class="section">
+    <h2>Overview</h2>
+    <p>chatPsych was created to investigate user behavior during authentic AI interactions. The interface allows researchers to condition participants, capture user–AI conversation data, and manipulate aspects like system prompts and temperature. Using a Flask/Python stack, it connects to APIs from OpenAI, Anthropic, Google, and more. The platform supports multi-condition research in both online and lab-based settings.</p>
+    <p>Key Focus: 
+      <ul>
+        <li>Prompt engineering for real-time AI behavior changes</li>
+        <li>Multi-model integration (GPT, Anthropic, Google, etc.)</li>
+        <li>Session tracking, robust data logging, token usage capture</li>
+        <li>Experimental manipulations via pre-prompts and hyperparameters</li>
+        <li>Simple or advanced designs with embedded or external surveys</li>
+      </ul>
+    </p>
+    <p>General Aim: Bridge the gap between theoretical AI studies and real-world usage, collecting meaningful data to inform future AI systems and user interactions.</p>
+  </section>
+
+    <!-- Playground Section -->
+    <section id="playground" class="section">
+      <h2>Playground</h2>
+      <p>Try out the chatPsych interface using a default AI agent (Prolific: user; Password: default).</p>
+      <p>Additionally, try a gamified 20-questions "Wordgame" interaction context (Prolific: user; Password: wordgame).</p>
+      <p>PLAYGROUND INTEGRATION STILL IN PROGRESS</p>
+    </section>
+
+  <!-- Downloads Section -->
+  <section id="downloads" class="section">
+    <h2>Downloads</h2>
+    <p>The chatPsych framework, including documentation and examples, is available on GitHub. Researchers can adapt or extend the code, incorporate new AI providers, or integrate specialized experimental features. It is free and open-source, encouraging community-driven improvements.</p>
+    <a href="https://github.com/Oliver-Lack/chatPsych" target="_blank">chatPsych Source Code</a>
+    <p>Follow the repository’s instructions for server deployment, local testing, recommended environment setup, SSL certification, and database maintenance. <br><br>
+      Example adaptions like Wordie-AI also demonstrate how to run multi-condition experiments.</p>
+      <a href="https://github.com/Oliver-Lack/Wordie-AI" target="_blank">Wordie-AI Code</a>
+
+  </section>
+
+  <!-- Versions/Adaptions Section -->
+  <section id="versions" class="section">
+    <h2>Versions / Adaptions</h2>
+    <p><br><br>The code is adaptable for various experimental manipulations. The interface offers opportunity for experimental manipulations that use prompt engineering, API call parameters, AI model selection, communication modalities (audio/text), custom vector store retrieval, hardcoded experimental AI responses/prompts, and more.</p>
+    <p>Example adaptions like Wordie-AI also demonstrate how to run multi-condition experiments.</p>
+    <a href="https://github.com/Oliver-Lack/Wordie-AI" target="_blank">Wordie-AI Code</a>
+  </section>
+
+  <!-- Developers Section -->
+  <section id="developers" class="section">
+    <h2>Developers</h2>
+    <p>Lead: Oliver C. Lack</p>
+    <p>Institutional Support: Australian Institute for Machine Learning & School of Psychology, University of Adelaide</p>
+    <p>We welcome collaboration and pull requests. Driving innovation through open-source practices ensures the platform grows with new AI features and research needs.</p>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="section">
+    <h2>Blog</h2>
+    <p>Our blog will feature usage guides, updates on newly integrated AI models, tutorials for lab-based or online expansions, and posts highlighting researchers’ findings.</p>
+    <p>We encourage the community to contact us about adaptions, updates, and research successes.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 chatPsych. O. C. Lack <br>     
+    <a href="https://github.com/Oliver-Lack/chatPsych" target="_blank">chatPsych Source Code</a>
+  </p>
+</footer>
+
+</body>
+</html>
