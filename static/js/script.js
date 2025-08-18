@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("chatPsych landing loaded.");
-  });
+  console.log("chatPsych landing loaded.");
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.section');
