@@ -11,7 +11,7 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Modern Simple Gradient Background */
+/* Dot-grid texture */
 html::before {
   content: '';
   position: fixed;
@@ -19,30 +19,24 @@ html::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, 
-    rgba(120, 80, 200, 0.08) 0%, 
-    rgba(100, 120, 180, 0.06) 30%, 
-    rgba(80, 160, 200, 0.05) 70%, 
-    transparent 100%
-  );
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
   z-index: -2;
   pointer-events: none;
 }
 
+/* Animated ambient orbs */
 html::after {
   content: '';
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(45deg, 
-    transparent 0%, 
-    rgba(255, 255, 255, 0.015) 50%, 
-    transparent 100%
-  );
+  inset: -15%;
+  background:
+    radial-gradient(ellipse 40% 40% at 12% 15%, rgba(100, 55, 210, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 35% at 88% 68%, rgba(35, 125, 215, 0.14) 0%, transparent 60%),
+    radial-gradient(ellipse 32% 32% at 42% 92%, rgba(215, 95, 25, 0.12) 0%, transparent 60%);
   z-index: -1;
   pointer-events: none;
+  animation: ambientDrift 55s ease-in-out infinite alternate;
 }
 
 body > * {
@@ -50,19 +44,13 @@ body > * {
   z-index: 1;
 }
 
-@keyframes overlayShift {
-  0%, 100% {
-    background: linear-gradient(135deg, 
-      rgba(255, 255, 255, 0.03) 0%, 
-      transparent 50%, 
-      rgba(255, 255, 255, 0.015) 100%);
-  }
-  50% {
-    background: linear-gradient(225deg, 
-      rgba(255, 255, 255, 0.025) 0%, 
-      transparent 60%, 
-      rgba(255, 255, 255, 0.02) 100%);
-  }
+@keyframes ambientDrift {
+  0%   { transform: translate(0%,    0%);    }
+  20%  { transform: translate(-2.5%, 3%);    }
+  40%  { transform: translate(3%,   -2%);    }
+  60%  { transform: translate(-1.5%, -3.5%); }
+  80%  { transform: translate(2.5%,  1.5%);  }
+  100% { transform: translate(-3%,   2.5%);  }
 }
 
 
