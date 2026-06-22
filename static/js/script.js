@@ -22,5 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
-    showSection('about'); // Default active section
+    showSection('home'); // Default active section
   });
